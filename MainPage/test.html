@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="test.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- подключение нужной версии jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- подключение popper.js, необходимого для корректной работы некоторых плагинов Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <!-- подключение js-файла -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<!-- Fork me on GitHub ribbon -->
+<!--<a href="https://github.com/Elitewares/CSS3-Slider" target="_blank"><img style="position: fixed; top: 0; right: 0; border: 0;z-index:99;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>-->
+
+<!-- Header -->
+<header>
+    <!--<div class="logo">-->
+        <!--<a href="#"><img src="https://yt3.ggpht.com/a-/AJLlDp1lilUroPVEmy06LTEvDaeQcXrK0pJEbk2qiw=s900-mo-c-c0xffffffff-rj-k-no"></a>-->
+
+        <!--&lt;!&ndash;<a href="#"><img src="../img/University.jpg"></a>&ndash;&gt;-->
+    <!--</div>-->
+    <nav>
+
+        <li> <a href="http://www.nmu.org.ua/ua/" target="_blank">ДТУ "Днепровская политехника"</a></li>
+        <li> <a href="#" id="nav_sign_in">Войти</a></li>
+        <!--<select onchange="if (this.value) window.location.href=this.value">-->
+            <!--<option value="#"> Default </option>-->
+            <!--<option value="#"> Left to Right </option>-->
+            <!--<option value="#"> Top to Bottom </option>-->
+            <!--<option value="#"> Bottom to Top </option>-->
+            <!--<option value="#"> light </option>-->
+        <!--</select>-->
+    </nav>
+</header>
+
+<!-- Slider -->
+<div id="slider">
+    <div class="slides">
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <!--<h1></h1>-->
+                    <h2>Человек не может по-настоящему усовершенствоваться, если не помогает усовершенствоваться другим.<br>
+                        Диккенс Ч..</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="http://img11.hostingpics.net/pics/767361311.jpg">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <!--<h1></h1>-->
+                    <h2>Образование – то, что остается после того, когда забывается все, чему учили.<br>
+                        А. Эйнштейн.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="http://img11.hostingpics.net/pics/412998972.jpg">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <!--<h1></h1>-->
+                    <h2>Только самые мудрые и самые глупые не поддаются обучению.<br>
+                        Конфуций.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="http://img11.hostingpics.net/pics/990696943.jpg">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <!--<h1></h1>-->
+                    <h2>Не стыдись учиться в зрелом возрасте: лучше научиться поздно, чем никогда.<br>
+                        Эзоп.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="http://img11.hostingpics.net/pics/601549194.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="switch">
+        <ul>
+            <li>
+                <div class="on"></div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<select >
+    <option>Отрасль</option>
+    <option>IT</option>
+    <option>Аналитика</option>
+    <option>Геологоразведка</option>
+    <option>Дизайн</option>
+    <option>Другие отрасли промышленности</option>
+    <option>Жилищно-коммунальное хозяйство</option>
+    <option>Здравоохранение, физическая культура и социальное обеспечение</option>
+    <option> Культура и искусство</option>
+    <option>Легкая промышленность</option>
+    <option>Лесная, деревообрабатывающая и целлюлозно-бумажная промышленность</option>
+    <option> Машиностроение и металлообработка</option>
+    <option> Медиа</option>
+    <option>Медицинская промышленность (производство медицинской аппаратуры и инструментов)</option>
+    <option> Микробиологическая промышленность</option>
+    <option> Мукомольно-крупяная и комбикормовая промышленности</option>
+    <option> Наука и научное обслуживание</option>
+    <option> Непроизводственные виды бытового обслуживания населения</option>
+    <option> Образование</option>
+    <option> Охрана</option>
+    <option>  Партийные и общественные объединения</option>
+    <option>Пищевая промышленность</option>
+    <option> Промышленность строительных конструкций и деталей</option>
+    <option> Промышленность строительных материаловv
+    <option> Реклама</option>
+    <option>Сервисные компании</option>
+    <option> Стекольная и фарфоро-фаянсовая промышленности</option>
+    <option>Строительство</option>
+    <option> Телекоммуникации</option>
+    <option>Топливная промышленность</option>
+    <option>Торговля</option>
+    <option>Транспорт и логистика</option>
+    <option>Туризм</option>
+    <option> Управление</option>
+    <option> Фармацевтика</option>
+    <option>Финансы, кредит, страхование, пенсионное обеспечение</option>
+    <option> Химическая и нефтехимическая промышленности</option>
+    <option> Цветная металлургия</option>
+    <option> Черная металлургия</option>
+    <option>Электроэнергетика</option>
+</select>
+
+<footer>
+    <h1> Opensource your work, knowledge is free </h1>
+</footer>
+</body>
+</html>
