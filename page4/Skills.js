@@ -33,7 +33,7 @@ $(document).ready(function() {
             bars: 'horizontal', // Required for Material Bar Charts.
             axes: {
                 x: {
-                    0: { side: 'top', label: 'Percentage'} // Top x-axis.
+                    0: { side: 'top', label: 'Количество'} // Top x-axis.
                 }
             },
             bar: { groupWidth: "20%" }

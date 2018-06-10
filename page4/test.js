@@ -30,11 +30,11 @@ $(document).ready(function() {
             height: 800,
             legend: { position: 'none' },
             chart: { title: 'Менеджер проектов',
-                subtitle: 'popularity by percentage' },
+                subtitle: 'Популярность по количеству' },
             bars: 'horizontal', // Required for Material Bar Charts.
             axes: {
                 x: {
-                    0: { side: 'top', label: 'Percentage'} // Top x-axis.
+                    0: { side: 'top', label: 'Количество'} // Top x-axis.
                 }
             },
             bar: { groupWidth: "120%" }
@@ -72,11 +72,11 @@ $(document).ready(function() {
             height: 800,
             legend: { position: 'none' },
             chart: { title: 'Системный аналитик',
-                subtitle: 'popularity by percentage' },
+                subtitle: 'Популярность по количеству' },
             bars: 'horizontal', // Required for Material Bar Charts.
             axes: {
                 x: {
-                    0: { side: 'top', label: 'Percentage'} // Top x-axis.
+                    0: { side: 'top', label: 'Количество'} // Top x-axis.
                 }
             },
             bar: { groupWidth: "120%" }
@@ -116,11 +116,11 @@ $(document).ready(function() {
             height: 800,
             legend: { position: 'none' },
             chart: { title: 'Специалист по ИС',
-                subtitle: 'popularity by percentage' },
+                subtitle: 'Популярность по количеству' },
             bars: 'horizontal', // Required for Material Bar Charts.
             axes: {
                 x: {
-                    0: { side: 'top', label: 'Percentage'} // Top x-axis.
+                    0: { side: 'top', label: 'Количество'} // Top x-axis.
                 }
             },
             bar: { groupWidth: "120%" }
@@ -161,11 +161,11 @@ $(document).ready(function() {
             backgroundColor: '#8846a0',
             legend: { position: 'none' },
             chart: { title: 'Специалист по ИР',
-                subtitle: 'popularity by percentage' },
+                subtitle: 'Популярность по количеству' },
             bars: 'horizontal', // Required for Material Bar Charts.
             axes: {
                 x: {
-                    0: { side: 'top', label: 'Percentage'} // Top x-axis.
+                    0: { side: 'top', label: 'Количество'} // Top x-axis.
                 }
             },
             bar: { groupWidth: "120%" }

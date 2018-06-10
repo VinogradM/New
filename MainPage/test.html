@@ -9,6 +9,7 @@
 
     <!-- подключение нужной версии jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="main_page.js"></script>
 
     <!-- подключение popper.js, необходимого для корректной работы некоторых плагинов Bootstrap 4 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -34,7 +35,8 @@
     <nav>
 
         <li> <a href="http://www.nmu.org.ua/ua/" target="_blank">ДТУ "Днепровская политехника"</a></li>
-        <li> <a href="#" id="nav_sign_in">Войти</a></li>
+        <li> <a href="#" id="nav_sign_in">Проголосовать</a></li>
+        <li> <a href="#" id="analitic">Просмотреть аналитику</a></li>
         <!--<select onchange="if (this.value) window.location.href=this.value">-->
             <!--<option value="#"> Default </option>-->
             <!--<option value="#"> Left to Right </option>-->
@@ -114,51 +116,47 @@
 </div>
 
 
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title" style="text-align: center;">Добро пожаловать на наш сайт!</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Данный ресурс был разработан для помощи университетам в понимании актуальности тем, которые они рассматривают
+                на своих занятиях.<br><br>Будем благодарны, если вы оставить свой голос на нашем сайте
+                    Если вы хотите просмотреть нашу аналитику, просто перейдите в меню «Аналитика»<br><br>
+                    Спасибо!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">ОК</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div><!-- /.модальное окно-Содержание -->
+    </div><!-- /.модальное окно-диалог -->
+</div><!-- /.модальное окно -->
+
+
+<!--<button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>-->
+<div id="myModal2" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Текст уведомления</div>
+            <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+        </div>
+    </div>
+</div>
 
 
 
-<select >
-    <option>Отрасль</option>
-    <option>IT</option>
-    <option>Аналитика</option>
-    <option>Геологоразведка</option>
-    <option>Дизайн</option>
-    <option>Другие отрасли промышленности</option>
-    <option>Жилищно-коммунальное хозяйство</option>
-    <option>Здравоохранение, физическая культура и социальное обеспечение</option>
-    <option> Культура и искусство</option>
-    <option>Легкая промышленность</option>
-    <option>Лесная, деревообрабатывающая и целлюлозно-бумажная промышленность</option>
-    <option> Машиностроение и металлообработка</option>
-    <option> Медиа</option>
-    <option>Медицинская промышленность (производство медицинской аппаратуры и инструментов)</option>
-    <option> Микробиологическая промышленность</option>
-    <option> Мукомольно-крупяная и комбикормовая промышленности</option>
-    <option> Наука и научное обслуживание</option>
-    <option> Непроизводственные виды бытового обслуживания населения</option>
-    <option> Образование</option>
-    <option> Охрана</option>
-    <option>  Партийные и общественные объединения</option>
-    <option>Пищевая промышленность</option>
-    <option> Промышленность строительных конструкций и деталей</option>
-    <option> Промышленность строительных материаловv
-    <option> Реклама</option>
-    <option>Сервисные компании</option>
-    <option> Стекольная и фарфоро-фаянсовая промышленности</option>
-    <option>Строительство</option>
-    <option> Телекоммуникации</option>
-    <option>Топливная промышленность</option>
-    <option>Торговля</option>
-    <option>Транспорт и логистика</option>
-    <option>Туризм</option>
-    <option> Управление</option>
-    <option> Фармацевтика</option>
-    <option>Финансы, кредит, страхование, пенсионное обеспечение</option>
-    <option> Химическая и нефтехимическая промышленности</option>
-    <option> Цветная металлургия</option>
-    <option> Черная металлургия</option>
-    <option>Электроэнергетика</option>
-</select>
 
 <footer>
     <h1> Opensource your work, knowledge is free </h1>

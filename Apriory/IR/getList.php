@@ -21,10 +21,10 @@ or die("Ошибка " . mysqli_error($link));
 mysqli_set_charset($link, "utf8");
 
 
-$prof = 'Специалист по ИC';
+$prof = 'Специалист по ИС';
 
 $mas_of_skills = array();
-$query2 = "SELECT DISTINCT `Компетенция` FROM `new` WHERE `Тип_компетенции`='Профессионально-произвдственная' WHERE `Профессия`='$prof'";
+$query2 = "SELECT DISTINCT `Компетенция` FROM `new` WHERE `Тип_компетенции`='Профессионально-произвдственная' AND `Профессия`='$prof'";
 $query_result2 = mysqli_query($link,$query2);
 if (!$query_result2)
 {
