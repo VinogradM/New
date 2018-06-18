@@ -21,7 +21,7 @@ or die("Ошибка " . mysqli_error($link));
 mysqli_set_charset($link, "utf8");
 
 
-$prof = 'Специалист по ИР';
+$prof = 'Менеджер проектов в сфере IT';
 
 $mas_of_skills = array();
 $query2 = "SELECT DISTINCT `Компетенция` FROM `new` WHERE `Тип_компетенции`='Профессионально-произвдственная' AND `Профессия`='$prof'";

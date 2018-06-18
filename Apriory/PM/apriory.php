@@ -37,7 +37,7 @@ or die("Ошибка " . mysqli_error($link));
 mysqli_set_charset($link, "utf8");
 
 
-$prof = 'Специалист по ИР';
+$prof = 'Менеджер проектов в сфере IT';
 
 
 

@@ -3,8 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!--<link rel="stylesheet" href="../../page4/">-->
+    <!-- подключение нужной версии jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+
 </head>
+<link rel="stylesheet" href="../main.css">
+<link rel="stylesheet" href="css.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+      integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">-->
+
+<script src="index.js">
+</script>
+
+<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
 <body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#"><img src="../../img/Logo.jpg" width="100px"; height="66px;" alt="lorem"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href=""><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<ul class="nav nav-tabs" style="margin-top:5%">
+    <li class="nav-item">
+        <a class="nav-link" href="Main_alanytics.html">Востребованность специалистов по отраслям</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="../../page4/skills_analitic.html">Необходимые компетенции</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../IR/index.html">Популярные наборы компетенций</a>
+    </li>
+
+</ul>
+
+
+<ul class="nav nav-tabs" style="margin-top:5%">
+    <li class="nav-item">
+        <a class="nav-link" href="../../Apriory/SA/index.html">Системный аналитик</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../../Apriory/PM/index.html">Менеджер проектов</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="../../Apriory/IS/index.html">Специалист по ИС</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="../../Apriory/IR/index.html">Специалист по ИР</a>
+    </li>
+</ul>
+
+<button id="add" class="btn btn-success">+</button>
+<button id="add2" class="btn btn-success">ADD</button>
+
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+
+
+<!--<select id="myselect" class="selectpicker"  data-live-search="true">-->
+<!--<option> Tom Foolery</option>-->
+<!--<option >Bill Gordon</option>-->
+
+<!--</select>-->
+<!--<select id="myselect2" class="selectpicker"  data-live-search="true">-->
+<!--<option> Tom Foolery</option>-->
+<!--<option >Bill Gordon</option>-->
+
+<!--</select>-->
+
+<p>Введите кол-во компетенций до <strong>20</strong></p>
+<input type="number" id="count">
+<button id="aprior" type="button" class="btn btn-success">Получить</button><br><br>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
 
 </body>
 </html>
