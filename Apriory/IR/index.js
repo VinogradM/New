@@ -59,10 +59,18 @@ $('body').append(list + '<br><br>');
 
 
     $('#add').click(function (){
+        $.ajax({
+            url: 'delete_table.php', // provide correct url
+            type: 'POST',
+            dataType: 'JSON'})// <-- since you are expecting JSON
+            .done(function (data) {
+            })
+            .error( function(data) {
+                return;
+            });
         var mas_for_apriori = [];
        for(var i =1; i <= count; i++) {
            var val = $('#' + i).find("option:selected").val();
-           alert(val);
            mas_for_apriori[i-1] = val;
        }
        var table ='';
@@ -72,7 +80,7 @@ $('body').append(list + '<br><br>');
                data: {mas: mas_for_apriori},
                dataType: 'JSON'})// <-- since you are expecting JSON
                .done(function (data) {
-                  console.log(data);
+                  //console.log(data);
 
                table+='<table class="table table-striped table-hover"><thead><tr><th>Набор</th><th>Мощность</th></tr>' +
                    '</thead> <tbody>';
@@ -84,11 +92,15 @@ $('body').append(list + '<br><br>');
                   $('body').append(table);
                })
                .error( function(data) {
-                   console.log(data);
+                  // console.log(data);
                    alert('Произошел сбой. Повторите попытку!');
 
                    return;
                });
+
+
+
+
            });
 
     // $('#add2').click(function () {

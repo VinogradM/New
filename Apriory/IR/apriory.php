@@ -278,7 +278,7 @@ for($i=0; $i < count($after_possible); $i++) {
 }
 
 //echo "<pre>";
-//print_r($main_mass);
+//print_r($power_set);
 //echo "<pre>";
 
 
@@ -301,6 +301,18 @@ for($i=0; $i < count($main_mass); $i++) {
 
 
 $mas_of_power = array();
+
+$skills = array();
+$query2 = "SELECT DISTINCT(`Компетенция`) FROM `interval_table`";
+$query_result2 = mysqli_query($link, $query2);
+if (!$query_result2) {
+    die('Ошибка выполнения запроса' . mysqli_error($link));
+}
+while ($rows = mysqli_fetch_array($query_result2)) {
+    $skills[] = $rows[0];
+}
+
+
 for ($i=0; $i < count($skills); $i++) {
     $query2 = "SELECT COUNT(`Компетенция`) FROM `interval_table` WHERE `Компетенция`='$skills[$i]'";
     $query_result2 = mysqli_query($link, $query2);
@@ -308,14 +320,10 @@ for ($i=0; $i < count($skills); $i++) {
         die('Ошибка выполнения запроса' . mysqli_error($link));
     }
     while ($rows = mysqli_fetch_array($query_result2)) {
-        // echo "$skills[$i].' -- '.$rows[0]<br>";
-       // $mas_of_power[][$skills[$i]] = $rows[0];
         $mas_of_power[$i]['Набор'] =$skills[$i];
         $mas_of_power[$i]['Мощность'] =$rows[0];
     }
 }
-//echo "<pre>";
-//print_r($mas_of_power);
-//echo "<pre>";
+
 arsort($mas_of_power);
 echo json_encode($mas_of_power, JSON_UNESCAPED_UNICODE);
