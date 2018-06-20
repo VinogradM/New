@@ -69,8 +69,10 @@ $(document).ready(function() {
             url: "insert_voit.php",
             data: {mas:mas_of_skills},
         }).success(function() {
-            alert( "second success" );
+            alert( "Благодарим за ваш голос! Он был очень ценен для нас" );
+            window.location.href = "../Apriory/IR/index.html";
         });
+
 
 
     });

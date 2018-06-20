@@ -39,6 +39,7 @@ var mas_of_skills = [];
             data: {mas:mas_of_skills, company: companyName, industry: industry, prof: prof, email: email},
         }).success(function() {
             alert( "second success" );
+            window.location.href = "../page3/page3.html";
         });
 
 

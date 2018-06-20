@@ -82,7 +82,7 @@ $('body').append(list + '<br><br>');
                .done(function (data) {
                   //console.log(data);
 
-               table+='<table class="table table-striped table-hover"><thead><tr><th>Набор</th><th>Мощность</th></tr>' +
+               table+='<table class="table"><thead class="thead-dark"><tr><th>Набор</th><th>Мощность</th></tr>' +
                    '</thead> <tbody>';
                   for (var i in data) {
 

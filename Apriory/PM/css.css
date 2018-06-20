@@ -1,3 +1,35 @@
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 33% !important;
 }
+body {
+    background-image: url(https://fonssite.files.wordpress.com/2015/11/ios7-ios-7-iphone-apple-space.jpg);
+}
+a, p {
+    color: #d3eae9 !important;
+}
+
+p {
+    margin-left: 1% !important;
+}
+
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a:active{
+    text-decoration: none;
+    background-color: #147f8e !important;
+}
+.active {
+    background-color: #147f8e !important;
+}
+.btn-info {
+    background-color: #147f8e !important;
+    color: #d3eae9 !important;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    background-color: #147f8e !important;
+    color: white !important;
+}
+
+input{
+    margin-left: 1% !important;
+    height: 31px !important;
+}
