@@ -56,5 +56,23 @@ $(document).ready(function() {
             alert(a[i]);
         }
     });
+    $("#submit3").click(function () {
+        $(".btn-success").each(function (i, elem) {
+            mas_of_skills[i] = $(elem).text();
+        });
+        for (var i = 0; i < mas_of_skills.length; i++) {
+            alert(mas_of_skills[i]);
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "insert_voit.php",
+            data: {mas:mas_of_skills},
+        }).success(function() {
+            alert( "second success" );
+        });
+
+
+    });
 
 });

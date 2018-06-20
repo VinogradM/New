@@ -27,10 +27,10 @@ mysqli_set_charset($link, "utf8");
 
 $mas_voiting = array();
 $mas_voiting = $_POST['mas'];
-$company = $_POST['company'];
-$prof = $_POST['prof'];
-$industry = $_POST['industry'];
-$email = $_POST['email'];
+//$company = $_POST['company'];
+//$prof = $_POST['prof'];
+//$industry = $_POST['industry'];
+//$email = $_POST['email'];
 //print_r($mas_voiting);
 
 
@@ -54,20 +54,24 @@ $email = $_POST['email'];
 //    }
 //}
 $code_respondent = 1;
-$query = "SELECT MAX(`Код_респондента`) FROM `new_copy`";
+$query = "SELECT * FROM `new_copy` ORDER BY `#12` DESC LIMIT 1;";
 if (!mysqli_query($link, $query)) {
     echo(mysqli_error($link));
 }
 if ($result = mysqli_query($link, $query)) {
 //    /* извлечение ассоциативного массива */
-    while ($row = mysqli_fetch_array($result)) {
-        $code_respondent=$row[0] + 1;
+    while ($row = mysqli_fetch_assoc($result)) {
+        $company = $row['Компания'];
+    $prof = $row['Профессия'];
+    $industry = $row['Отрасль'];
+      $email = $row['Почта_голосующего'];
+      $code_respondent = $row['Код_респондента'];
    }
 }
 
 for($i=0;$i < count($mas_voiting) ; $i++) {
     // print_r($mas_voiting[$i] . "---");
-    $query = "INSERT INTO `new_copy` (Код_респондента, Тип_респондента, Отрасль, Компетенция, Тип_компетенции, Профессия, Компания, Почта_голосующего) VALUES ('" . $code_respondent . "', 'Работодатель', '" . $industry . "','" . $mas_voiting[$i] . "', 'Профессионально-произвдственная','" . $prof . "','" . $company . "','" . $email . "')";
+    $query = "INSERT INTO `new_copy` (Код_респондента, Тип_респондента, Отрасль, Компетенция, Тип_компетенции, Профессия, Компания, Почта_голосующего) VALUES ('" . $code_respondent . "', 'Работодатель', '" . $industry . "','" . $mas_voiting[$i] . "', 'Личностная','" . $prof . "','" . $company . "','" . $email . "')";
     echo $query;
     if (!mysqli_query($link, $query)) {
         echo(mysqli_error($link));

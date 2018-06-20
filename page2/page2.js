@@ -21,11 +21,8 @@ var mas_of_skills = [];
     });
 
     $("#submit3").click(function () {
-        // var text = $(".btn-success").text();
-        // alert(text);
         $(".btn-success").each(function (i, elem) {
             mas_of_skills[i] = $(elem).text();
-            // alert(i + ': ' + $(elem).text());
         });
         for (var i = 0; i < mas_of_skills.length; i++) {
             alert(mas_of_skills[i]);
@@ -35,7 +32,6 @@ var mas_of_skills = [];
         var industry = $('#industry').val();
         var prof = $('#inputProf').val();
         var email = $('#inputEmail').val();
-        alert(companyName+industry+prof+email);
 
         $.ajax({
             type: "POST",
