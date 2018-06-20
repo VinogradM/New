@@ -53,15 +53,15 @@ $(document).ready(function() {
             // alert(i + ': ' + $(elem).text());
         });
         for (var i = 0; i < a.length; i++) {
-            alert(a[i]);
-        }
+            // alert(a[i]);
+    }
     });
     $("#submit3").click(function () {
         $(".btn-success").each(function (i, elem) {
             mas_of_skills[i] = $(elem).text();
         });
         for (var i = 0; i < mas_of_skills.length; i++) {
-            alert(mas_of_skills[i]);
+            // alert(mas_of_skills[i]);
         }
 
         $.ajax({

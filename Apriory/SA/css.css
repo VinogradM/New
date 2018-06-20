@@ -33,3 +33,13 @@ input{
     margin-left: 1% !important;
     height: 31px !important;
 }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    /*color: black !important;*/
+    text-decoration: none;
+    background-color: #147f8e !important;
+    outline: 0;
+}
+
+.dropdown-menu>li>a {
+    background-color: #319e88 !important;
+}

@@ -25,7 +25,7 @@ var mas_of_skills = [];
             mas_of_skills[i] = $(elem).text();
         });
         for (var i = 0; i < mas_of_skills.length; i++) {
-            alert(mas_of_skills[i]);
+            // alert(mas_of_skills[i]);
         }
 
         var companyName = $('#companyName').val();
