@@ -4,6 +4,10 @@
 
 $(document).ready(function() {
 
+    // $('#submit3').click(function () {
+    //     alert('click');
+    // });
+
 var mas_of_skills = [];
     $(".btn").click(function () {
         if ($(this).hasClass("btn-danger")) {
@@ -16,7 +20,7 @@ var mas_of_skills = [];
         }
     });
 
-    $("#submit").click(function () {
+    $("#submit3").click(function () {
         // var text = $(".btn-success").text();
         // alert(text);
         $(".btn-success").each(function (i, elem) {
@@ -27,10 +31,16 @@ var mas_of_skills = [];
             alert(mas_of_skills[i]);
         }
 
+        var companyName = $('#companyName').val();
+        var industry = $('#industry').val();
+        var prof = $('#inputProf').val();
+        var email = $('#inputEmail').val();
+        alert(companyName+industry+prof+email);
+
         $.ajax({
             type: "POST",
             url: "insert_voit.php",
-            data: {mas_of_skills},
+            data: {mas:mas_of_skills, company: companyName, industry: industry, prof: prof, email: email},
         }).success(function() {
             alert( "second success" );
         });

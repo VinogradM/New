@@ -81,27 +81,146 @@
     </div>
 
     <div class="container">
-        <!-- Example row of columns -->
+        <form class="form-signin" style="margin-left: 30%; margin-right: 30%;" >
+            <div class="mb-4 text-center">
+                <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal">Пожалуйста, заполните данными обязательные поля</h1>
+            </div>
 
-        <button class=" btn btn-danger">Знание Excel</button>
-        <button class="btn btn-danger">Знания CRM системы</button>
-        <button class="btn btn-danger">Знание основ веб разработки (HTML, CSS, JS, PHP)</button>
-        <button class="btn btn-danger">Основы QA</button>
-        <button class="btn btn-danger">Умение работать c Redmine/JIRA</button>
-        <button class="btn btn-danger">Базовые знания SQL</button>
-        <button class="btn btn-danger">Умение работать с проектной документации (BRD / FSD / UMD / MRD)</button>
-        <button class="btn btn-danger">Знание лучших практик в области UI / UX в электронной коммерции</button>
-        <button class="btn btn-danger">Уровень английского - выше среднего</button>
-        <button class="btn btn-danger">Web програмирование</button>
-        <button class="btn btn-danger">Web дизайн</button>
-        <button class="btn btn-danger">Знание Google analytics, GTM, Яндекс метрика</button>
-        <button class="btn btn-danger">Навыки в тестировании API, web и mobile приложений</button>
-        <button class="btn btn-danger">Навыки работы с ERP системами</button>
-        <button class="btn btn-danger">Знание IBM WebSphere</button>
-        <button class="btn btn-danger">Знание основ бухучета</button>
-        <button class="btn btn-danger">Программирование в среде 1С 8.2</button>
-        <button class="btn btn-danger">Навыки работы с сервисами Google Webmaster, Ahrefs</button>
-        <button class="btn btn-danger">Знание PLSQL</button>
+            <!--<div class=" form-label-group">-->
+            <!--<label for="inputEmail">Имя пользователя *</label>-->
+            <!--<input type="email" id="inputEmail" class="form-control" placeholder="Имя пользователя" required >-->
+            <!--</div>-->
+
+            <!--<div class=" form-label-group">-->
+            <!--<label for="inputEmail">Пароль *</label>-->
+            <!--<input type="password" id="password" class="form-control" placeholder="Пароль" required >-->
+            <!--</div>-->
+
+            <div class=" form-label-group">
+                <label for="companyName">Имя компании </label>
+                <input type="email" id="companyName" class="form-control" placeholder="Имя компании">
+            </div>
+
+            <div class="form-label-group">
+                <label for="industry">Отрасль *</label>
+                <select class="custom-select" id="industry">
+                    <option selected disabled>Не выбрано</option>
+                    <option>IT</option>
+                    <option>Аналитика</option>
+                    <option>Геологоразведка</option>
+                    <option>Дизайн</option>
+                    <option>Другие отрасли промышленности</option>
+                    <option>Жилищно-коммунальное хозяйство</option>
+                    <option>Здравоохранение, физическая культура и социальное обеспечение</option>
+                    <option> Культура и искусство</option>
+                    <option>Легкая промышленность</option>
+                    <option>Лесная, деревообрабатывающая и целлюлозно-бумажная промышленность</option>
+                    <option> Машиностроение и металлообработка</option>
+                    <option> Медиа</option>
+                    <option>Медицинская промышленность (производство медицинской аппаратуры и инструментов)</option>
+                    <option> Микробиологическая промышленность</option>
+                    <option> Мукомольно-крупяная и комбикормовая промышленности</option>
+                    <option> Наука и научное обслуживание</option>
+                    <option> Непроизводственные виды бытового обслуживания населения</option>
+                    <option> Образование</option>
+                    <option> Охрана</option>
+                    <option>  Партийные и общественные объединения</option>
+                    <option>Пищевая промышленность</option>
+                    <option> Промышленность строительных конструкций и деталей</option>
+                    <option> Промышленность строительных материаловv
+                    <option> Реклама</option>
+                    <option>Сервисные компании</option>
+                    <option> Стекольная и фарфоро-фаянсовая промышленности</option>
+                    <option>Строительство</option>
+                    <option> Телекоммуникации</option>
+                    <option>Топливная промышленность</option>
+                    <option>Торговля</option>
+                    <option>Транспорт и логистика</option>
+                    <option>Туризм</option>
+                    <option> Управление</option>
+                    <option> Фармацевтика</option>
+                    <option>Финансы, кредит, страхование, пенсионное обеспечение</option>
+                    <option> Химическая и нефтехимическая промышленности</option>
+                    <option> Цветная металлургия</option>
+                    <option> Черная металлургия</option>
+                    <option>Электроэнергетика</option>
+                </select>
+            </div>
+
+            <div class=" form-label-group">
+                <label for="inputProf">Профессия *</label>
+                <select class="custom-select" id="inputProf">
+                    <option selected disabled>Не выбрано</option>
+                    <option>Системный аналитик</option>
+                    <option>Менеджер проектов в сфере IT</option>
+                    <option>Специалист по информационным системам</option>
+                    <option>Специалист по информационным ресурсам</option>
+                </select>
+            </div>
+
+
+            <div class=" form-label-group">
+                <label for="inputEmail">Электронная почта</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Электронная почта" >
+            </div>
+            <br>
+            <!--<button class="btn btn-lg btn-primary btn-block" type="submit" id="but_sign_up">Перейти к голосованию</button>-->
+        </form>
+        <p style="margin-left: 10%; font-size: 22px; font-weight: bold">Выбирите навыки, которые по вашему мнению необходимы для данной профессии</p>
+
+        <button class=" btn btn-danger" title="Знание Excel">Знание Excel</button>
+        <button class="btn btn-danger" title="Знания CRM системы">Знания CRM системы</button>
+        <button class="btn btn-danger" title="Знание основ веб разработки (HTML, CSS, JS, PHP)">Знание основ веб разработки (HTML, CSS, JS, PHP)</button>
+        <button class="btn btn-danger" title="Основы QA">Основы QA</button>
+        <button class="btn btn-danger" title="Умение работать c Redmine/JIRA">Умение работать c Redmine/JIRA</button>
+        <button class="btn btn-danger" title="Базовые знания SQL">Базовые знания SQL</button>
+        <button class="btn btn-danger" title="Умение работать с проектной документации (BRD / FSD / UMD / MRD)">Умение работать с проектной документации (BRD / FSD / UMD / MRD)</button>
+        <button class="btn btn-danger" title="Знание лучших практик в области UI / UX в электронной коммерции">Знание лучших практик в области UI / UX в электронной коммерции</button>
+        <button class="btn btn-danger" title="Уровень английского - выше среднего">Уровень английского - выше среднего</button>
+        <button class="btn btn-danger" title="Web програмирование">Web програмирование</button>
+        <button class="btn btn-danger" title="Web дизайн">Web дизайн</button>
+        <button class="btn btn-danger" title="Знание Google analytics, GTM, Яндекс метрика">Знание Google analytics, GTM, Яндекс метрика</button>
+        <button class="btn btn-danger" title="Навыки в тестировании API, web и mobile приложений">Навыки в тестировании API, web и mobile приложений</button>
+        <button class="btn btn-danger" title="Навыки работы с ERP системами">Навыки работы с ERP системами</button>
+        <button class="btn btn-danger" title="Знание IBM WebSphere">Знание IBM WebSphere</button>
+        <button class="btn btn-danger" title="Знание основ бухучета">Знание основ бухучета</button>
+        <button class="btn btn-danger" title="Программирование в среде 1С 8.2">Программирование в среде 1С 8.2</button>
+        <button class="btn btn-danger" title="Навыки работы с сервисами Google Webmaster, Ahrefs">Навыки работы с сервисами Google Webmaster, Ahrefs</button>
+        <button class="btn btn-danger" title="Знание PLSQL">Знание PLSQL</button>
+        <button class="btn btn-danger" title="Умение работать с форматом обмена данными JSON или REST"> Умение работать с форматом обмена данными JSON или REST </button>
+        <button class="btn btn-danger" title="Знание методов и основ анализа и обработки данных полученных от GPS систем мониторинга"> Знание методов и основ анализа и обработки данных полученных от GPS систем мониторинга </button>
+        <button class="btn btn-danger" title="Знание основ управленческого учета"> Знание основ управленческого учета </button>
+        <button class="btn btn-danger" title="Умение работать с ПО автоматизации бизнес-процессов, учета и отчетности">Умение работать с ПО автоматизации бизнес-процессов, учета и отчетности  </button>
+        <button class="btn btn-danger" title="Навыки визуализации отчётов "> Навыки визуализации отчётов </button>
+        <button class="btn btn-danger" title="Умение работать с открытыми источниками веб-анализа"> Умение работать с открытыми источниками веб-анализа </button>
+        <button class="btn btn-danger" title="Знание Linux на уровне уверенного пользователя "> Знание Linux на уровне уверенного пользователя </button>
+        <button class="btn btn-danger" title="Знание Python и/или R ">Знание Python и/или R  </button>
+        <button class="btn btn-danger" title="Понимание основных алгоритмов Machine Learning"> Понимание основных алгоритмов Machine Learning </button>
+        <button class="btn btn-danger" title="Знание статистики ">Знание статистики  </button>
+        <button class="btn btn-danger" title="Навыки в нагрузочном тестировании, секьюрити-тестировании ">Навыки в нагрузочном тестировании, секьюрити-тестировании  </button>
+        <button class="btn btn-danger" title="Умение составлять сценарии тестирования "> Умение составлять сценарии тестирования </button>
+        <button class="btn btn-danger" title="Понимание Agile methodologies">  Понимание Agile methodologies</button>
+        <button class="btn btn-danger" title="Знание eSalary">  Знание eSalary</button>
+        <button class="btn btn-danger" title="Владение технологиями: XML (XSLT, XSD), SOAP, REST, Ajax">  Владение технологиями: XML (XSLT, XSD), SOAP, REST, Ajax</button>
+        <button class="btn btn-danger" title="Навыки разработки и внедрения бизнес-процессов">  Навыки разработки и внедрения бизнес-процессов</button>
+        <button class="btn btn-danger" title="Базовые знания ИТ-решений и бизнес-процессов, в рамках которого лежит масштаб проекта"> Базовые знания ИТ-решений и бизнес-процессов, в рамках которого лежит масштаб проекта </button>
+        <button class="btn btn-danger" title="Знание программ «прайс-анализаторы», «парсеры»"> Знание программ «прайс-анализаторы», «парсеры» </button>
+        <button class="btn btn-danger" title="Знание специфики и схем продвижения в Instagram, Facebook"> Знание специфики и схем продвижения в Instagram, Facebook </button>
+        <button class="btn btn-danger" title="Умение работать с WordPress и Opencart"> Умение работать с WordPress и Opencart </button>
+        <button class="btn btn-danger" title="Основы Photoshop, HTML, CSS"> Основы Photoshop, HTML, CSS </button>
+        <button class="btn btn-danger" title="Базовое понимание UX"> Базовое понимание UX </button>
+        <button class="btn btn-danger" title="Flash Recovery Features and Flash back"> Flash Recovery Features and Flash back </button>
+        <button class="btn btn-danger" title="Основы СЕО">  Основы СЕО</button>
+        <button class="btn btn-danger" title="Умение составлять технические задания"> Умение составлять технические задания </button>
+        <button class="btn btn-danger" title="Знание лучших практик в области UI / UX в электронной коммерции"> Знание лучших практик в области UI / UX в электронной коммерции </button>
+        <button class="btn btn-danger" title="Владение MS Project ">Владение MS Project  </button>
+        <button class="btn btn-danger" title="Знание гибких и классических процессов разработки"> Знание гибких и классических процессов разработки </button>
+        <button class="btn btn-danger" title=" Предметные знания OSS -доменов"> Предметные знания OSS -доменов </button>
+        <button class="btn btn-danger" title="Навыки Product Management"> Навыки Product Management </button>
+        <button class="btn btn-danger" title="Навыки 3D моделирования">  Навыки 3D моделирования</button>
+        <button class="btn btn-danger" title="Навыки 	моделирование бизнес-процессов с использованием одной из нотаций BPMN, eEPC, UML, IDE">Навыки 	моделирование бизнес-процессов с использованием одной из нотаций BPMN, eEPC, UML, IDE  </button>
+
 
         <!--<canvas id="bar-chart" width="800" height="450"></canvas>-->
         <!--<canvas id="line-chart" width="800" height="450"></canvas>-->

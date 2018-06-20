@@ -26,8 +26,12 @@ mysqli_set_charset($link, "utf8");
 //$query = "SELECT * FROM `respondent`";
 
 $mas_voiting = array();
-$mas_voiting = $_POST['mas_of_skills'];
-print_r($mas_voiting);
+$mas_voiting = $_POST['mas'];
+$company = $_POST['company'];
+$prof = $_POST['prof'];
+$industry = $_POST['industry'];
+$email = $_POST['email'];
+//print_r($mas_voiting);
 
 
 //$query = "SELECT * FROM `respondent`";
@@ -41,10 +45,21 @@ print_r($mas_voiting);
 //print_r($mas_ar);
 
 
+//for($i=0;$i < count($mas_voiting) ; $i++) {
+//    print_r($mas_voiting[$i] . "---");
+//   $query = "INSERT INTO `test` (voite, industry, prof, company, email) VALUES ('" . $mas_voiting[$i] ."','". $industry ."','".$prof."','".$company."','".$company."')";
+// //   $query = "INSERT INTO `test` (voite) VALUES ('" . $mas_voiting[$i] . "')";
+//    if (!mysqli_query($link, $query)) {
+//        echo(mysqli_error($link));
+//    }
+//}
+
 for($i=0;$i < count($mas_voiting) ; $i++) {
-    print_r($mas_voiting[$i] . "---");
-   $query = "INSERT INTO `test` (voite) VALUES ('" . $mas_voiting[$i] . "')";
- //   $query = "INSERT INTO `test` (voite) VALUES ('" . $mas_voiting[$i] . "')";
+   // print_r($mas_voiting[$i] . "---");
+
+    $query = "INSERT INTO `new_copy` (Код_респондента, Тип_респондента, Отрасль, Компетенция, Тип_компетенции, Профессия, Компания, Почта_голосующего) VALUES (1, 'Работодатель', '". $industry ."','".$mas_voiting[$i]."', 'Профессионально-произвдственная','". $prof."','".$company."','".$email."')";
+   echo $query;
+    //   $query = "INSERT INTO `test` (voite) VALUES ('" . $mas_voiting[$i] . "')";
     if (!mysqli_query($link, $query)) {
         echo(mysqli_error($link));
     }
